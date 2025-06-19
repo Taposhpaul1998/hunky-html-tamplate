@@ -1,0 +1,143 @@
+
+
+/* resute  */
+
+*{
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+*::before,
+*::after{
+-webkit-box-sizing:inherit;
+box-sizing:inherit;
+}
+
+main,
+body{
+    overflow-x: clip;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ 
+ol,
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+h1{
+    font-size: 120px;
+    font-weight: bold;
+}
+h2{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+
+
+.align-center{
+    align-items: center !important;
+}
+
+/* ver  */
+:root{
+--color-green-yellow:#88E64A;
+--color-black:#0E0E0E;
+--color-bacground:#F6F5F3;
+--color-white:#FFFFFF;
+}
+
+/* header style start  */
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 60px;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 110px;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.nav__list li a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--color-black);
+    text-transform: uppercase;
+}
+.nav__dropdawn{
+    position: relative;
+}
+.nav__dropdawn ul{
+   position: absolute;
+   background: var(--color-white);
+   top: 35px;
+   width: 220px;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .3s;
+   transform: scaleY(0);
+   z-index: 99;
+}
+
+.nav__dropdawn ul li a{
+    padding: 16px 20px ;
+    color: var(--color-black);
+    text-transform: uppercase;
+    transition: all .3s;
+    white-space: nowrap;
+}
+.nav__dropdawn ul li a:hover {
+  background-color: #0e0e0e;
+  color: #fff;
+   width: 100%;
+}
+.nav__dropdawn:hover >ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.nav__dropdawn--second ul{
+    top: 0;
+    left: inherit;
+    right: -100%;
+}
+
+.header__hamburger{
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-black);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+.header__hamburger span{
+    width: 18px;
+    height: 2px;
+    background-color: var(--color-white);
+    border-radius: 2px;
+}
+/* header style end  */
+
