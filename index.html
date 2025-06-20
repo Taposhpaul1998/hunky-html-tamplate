@@ -25,9 +25,9 @@
                 </div>
                 <div class="col-lg-10 col-6">
                     <nav class="nav">
-                        <ul class="nav__list">
+                        <ul class="nav__list ">
                             <li class="nav__dropdawn">
-                                <a href="/">HOME</a>
+                                <a href="#">HOME</a>
                                 <ul>
                                     <li> <a href="/">CREATIVE AGENCY</a></li>
                                     <li> <a href="/home2.html">SEO AGENCY</a></li>
@@ -41,15 +41,15 @@
                                     <li class="nav__dropdawn nav__dropdawn--second">
                                         <a href="#">SERVICE</a>
                                         <ul>
-                                            <li><a href="/service">SERVICE</a></li>
-                                            <li><a href="/service-details">SERVICE DETAILS</a></li>
+                                            <li><a href="/service.html">SERVICE</a></li>
+                                            <li><a href="/service-details.html">SERVICE DETAILS</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav__dropdawn nav__dropdawn--second">
                                         <a href="#">TEAM</a>
                                         <ul>
-                                            <li><a href="/team">TEAM</a></li>
-                                            <li><a href="/team-details">TEAM DETAILS</a></li>
+                                            <li><a href="/team.html">TEAM</a></li>
+                                            <li><a href="/team-details.html">TEAM DETAILS</a></li>
                                         </ul>
                                     </li>
                                     <li> <a href="/pricing.html">PRICING</a></li>
@@ -60,16 +60,16 @@
                             <li class="nav__dropdawn">
                                 <a href="#">PORTFOLIO</a>
                                 <ul>
-                                    <li><a href="/portfolio">PORTFOLIO</a></li>
-                                    <li><a href="/portfolio-details">PORTFOLIO DETAILS</a></li>
+                                    <li><a href="/portfolio.html">PORTFOLIO</a></li>
+                                    <li><a href="/portfolio-details.html">PORTFOLIO DETAILS</a></li>
                                 </ul>
                             </li>
                             <li class="nav__dropdawn">
                                 <a href="#">BLOG</a>
                                 <ul>
-                                    <li><a href="/blog">BLOG GRID</a></li>
-                                    <li><a href="/blog-standard">BLOG STANDARD</a></li>
-                                    <li><a href="/blog-details">BLOG DETAILS</a></li>
+                                    <li><a href="/blog.html">BLOG GRID</a></li>
+                                    <li><a href="/blog-standard.html">BLOG STANDARD</a></li>
+                                    <li><a href="/blog-details.html">BLOG DETAILS</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -77,31 +77,252 @@
                             </li>
                         </ul>
                         <a class="header__hamburger d-none d-lg-flex" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasDarkSitebar" aria-controls="offcanvasDarkNavbar"
+                            aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <a class="header__hamburger--nav d-lg-none" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                             aria-label="Toggle navigation">
                             <span></span>
                             <span></span>
                             <span></span>
                         </a>
-                        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                            aria-labelledby="offcanvasDarkNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-
-                            </div>
-                        </div>
 
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+    <!-- mobile nav  -->
+    <div class="offcanvas offcanvas-start mobile__nav" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+            <a class="header-logo" href="/">
+                <img src="./assets/images/Hunky.png" alt="Logo">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="mobile__nav--list ">
+                <ul>
+                    <li class="mobile__dropdawn">
+                        <a href="#">HOME</a>
+                        <ul>
+                            <li> <a href="/">CREATIVE AGENCY</a></li>
+                            <li> <a href="/home2.html">SEO AGENCY</a></li>
+                            <li> <a href="/home3.html">MARKETING AGENCY</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile__dropdawn">
+                        <a href="#">PAGES</a>
+                        <ul>
+                            <li> <a href="/about.html">ABOUT US</a></li>
+                            <li class="mobile__dropdawn mobile__dropdawn--second">
+                                <a href="#">SERVICE</a>
+                                <ul>
+                                    <li><a href="/service.html">SERVICE</a></li>
+                                    <li><a href="/service-details.html">SERVICE DETAILS</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile__dropdawn mobile__dropdawn--second">
+                                <a href="#">TEAM</a>
+                                <ul>
+                                    <li><a href="/team.html">TEAM</a></li>
+                                    <li><a href="/team-details.html">TEAM DETAILS</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="/pricing.html">PRICING</a></li>
+                            <li> <a href="/faq.html">FAQ'S</a></li>
+                            <li><a href="/404.html">404</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile__dropdawn">
+                        <a href="#">PORTFOLIO</a>
+                        <ul>
+                            <li><a href="/portfolio.html">PORTFOLIO</a></li>
+                            <li><a href="/portfolio-details.html">PORTFOLIO DETAILS</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile__dropdawn">
+                        <a href="#">BLOG</a>
+                        <ul>
+                            <li><a href="/blog.html">BLOG GRID</a></li>
+                            <li><a href="/blog-standard.html">BLOG STANDARD</a></li>
+                            <li><a href="/blog-details.html">BLOG DETAILS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contact--info">
+                <div class="header__location">
+                    <div class="header__contact--icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18 0C11.6743 0 6.39844 5.09555 6.39844 11.6016C6.39844 14.0767 7.1422 16.2838 8.56962 18.352L17.1122 31.6818C17.5266 32.3298 18.4743 32.3286 18.8878 31.6818L27.4674 18.3066C28.8641 16.3322 29.6016 14.0138 29.6016 11.6016C29.6016 5.20446 24.3971 0 18 0ZM18 16.875C15.0924 16.875 12.7266 14.5092 12.7266 11.6016C12.7266 8.69393 15.0924 6.32812 18 6.32812C20.9076 6.32812 23.2734 8.69393 23.2734 11.6016C23.2734 14.5092 20.9076 16.875 18 16.875Z"
+                                fill="white" />
 
+                        </svg>
 
+                    </div>
+                    <h4>Address</h4>
+                    <ul>
+                        <li>254, North City,</li>
+                        <li>Bulex Center, New York</li>
+                    </ul>
+                </div>
+                <div class="header__contact">
+                    <div class="header__contact--icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_4111_3489)">
+                                <path
+                                    d="M23.3263 19.4941L20.3113 22.5194C19.0886 23.7464 16.9373 23.7728 15.6882 22.5194L12.673 19.4941L1.84375 30.3585C2.24685 30.5449 2.6913 30.6562 3.1638 30.6562H32.8357C33.3082 30.6562 33.7525 30.5451 34.1554 30.3586L23.3263 19.4941Z"
+                                    fill="white" />
+                                <path
+                                    d="M32.8355 5.34375H3.16366C2.69116 5.34375 2.24671 5.45498 1.84375 5.64138L13.4156 17.2516C13.4163 17.2524 13.4173 17.2525 13.418 17.2533C13.4188 17.2541 13.4189 17.2551 13.4189 17.2551L17.1816 21.0302C17.5812 21.4298 18.4181 21.4298 18.8177 21.0302L22.5796 17.2557C22.5796 17.2557 22.5805 17.2541 22.5813 17.2533C22.5813 17.2533 22.583 17.2524 22.5838 17.2516L34.1553 5.64131C33.7523 5.45484 33.308 5.34375 32.8355 5.34375Z"
+                                    fill="white" />
+                                <path
+                                    d="M0.336516 7.11621C0.127969 7.53795 0 8.00609 0 8.50755V27.4919C0 27.9934 0.127828 28.4615 0.336445 28.8833L11.1845 18.0001L0.336516 7.11621Z"
+                                    fill="white" />
+                                <path
+                                    d="M35.6643 7.11621L24.8164 18.0002L35.6643 28.8836C35.8728 28.4618 36.0008 27.9937 36.0008 27.4921V8.5077C36.0008 8.00609 35.8728 7.53795 35.6643 7.11621Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_4111_3489">
+                                    <rect width="36" height="36" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>exumple@gmail.com</li>
+                        <li>212-555-1234</li>
+                    </ul>
+                </div>
+                <div class="socile__link">
+                    <div class="socile__icon">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.71875 9H6.375V16H3.25V9H0.6875V6.125H3.25V3.90625C3.25 1.40625 4.75 0 7.03125 0C8.125 0 9.28125 0.21875 9.28125 0.21875V2.6875H8C6.75 2.6875 6.375 3.4375 6.375 4.25V6.125H9.15625L8.71875 9Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                    <div class="socile__icon">
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.3438 3.78516C14.3438 3.94141 14.3438 4.06641 14.3438 4.22266C14.3438 8.56641 11.0625 13.5352 5.03125 13.5352C3.15625 13.5352 1.4375 13.0039 0 12.0664C0.25 12.0977 0.5 12.1289 0.78125 12.1289C2.3125 12.1289 3.71875 11.5977 4.84375 10.7227C3.40625 10.6914 2.1875 9.75391 1.78125 8.44141C2 8.47266 2.1875 8.50391 2.40625 8.50391C2.6875 8.50391 3 8.44141 3.25 8.37891C1.75 8.06641 0.625 6.75391 0.625 5.16016V5.12891C1.0625 5.37891 1.59375 5.50391 2.125 5.53516C1.21875 4.94141 0.65625 3.94141 0.65625 2.81641C0.65625 2.19141 0.8125 1.62891 1.09375 1.16016C2.71875 3.12891 5.15625 4.44141 7.875 4.59766C7.8125 4.34766 7.78125 4.09766 7.78125 3.84766C7.78125 2.03516 9.25 0.566406 11.0625 0.566406C12 0.566406 12.8438 0.941406 13.4688 1.59766C14.1875 1.44141 14.9062 1.16016 15.5312 0.785156C15.2812 1.56641 14.7812 2.19141 14.0938 2.59766C14.75 2.53516 15.4062 2.34766 15.9688 2.09766C15.5312 2.75391 14.9688 3.31641 14.3438 3.78516Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                    <div class="socile__icon">
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.125 15.0352H0.21875V5.69141H3.125V15.0352ZM1.65625 4.44141C0.75 4.44141 0 3.66016 0 2.72266C0 1.44141 1.375 0.628906 2.5 1.28516C3.03125 1.56641 3.34375 2.12891 3.34375 2.72266C3.34375 3.66016 2.59375 4.44141 1.65625 4.44141ZM13.9688 15.0352H11.0938V10.5039C11.0938 9.41016 11.0625 8.03516 9.5625 8.03516C8.0625 8.03516 7.84375 9.19141 7.84375 10.4102V15.0352H4.9375V5.69141H7.71875V6.97266H7.75C8.15625 6.25391 9.09375 5.47266 10.5 5.47266C13.4375 5.47266 14 7.41016 14 9.91016V15.0352H13.9688Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="socile__icon">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 3.44141C9.96875 3.44141 11.5938 5.06641 11.5938 7.03516C11.5938 9.03516 9.96875 10.6289 8 10.6289C6 10.6289 4.40625 9.03516 4.40625 7.03516C4.40625 5.06641 6 3.44141 8 3.44141ZM8 9.37891C9.28125 9.37891 10.3125 8.34766 10.3125 7.03516C10.3125 5.75391 9.28125 4.72266 8 4.72266C6.6875 4.72266 5.65625 5.75391 5.65625 7.03516C5.65625 8.34766 6.71875 9.37891 8 9.37891ZM12.5625 3.31641C12.5625 2.84766 12.1875 2.47266 11.7188 2.47266C11.25 2.47266 10.875 2.84766 10.875 3.31641C10.875 3.78516 11.25 4.16016 11.7188 4.16016C12.1875 4.16016 12.5625 3.78516 12.5625 3.31641ZM14.9375 4.16016C15 5.31641 15 8.78516 14.9375 9.94141C14.875 11.0664 14.625 12.0352 13.8125 12.8789C13 13.6914 12 13.9414 10.875 14.0039C9.71875 14.0664 6.25 14.0664 5.09375 14.0039C3.96875 13.9414 3 13.6914 2.15625 12.8789C1.34375 12.0352 1.09375 11.0664 1.03125 9.94141C0.96875 8.78516 0.96875 5.31641 1.03125 4.16016C1.09375 3.03516 1.34375 2.03516 2.15625 1.22266C3 0.410156 3.96875 0.160156 5.09375 0.0976562C6.25 0.0351562 9.71875 0.0351562 10.875 0.0976562C12 0.160156 13 0.410156 13.8125 1.22266C14.625 2.03516 14.875 3.03516 14.9375 4.16016ZM13.4375 11.1602C13.8125 10.2539 13.7188 8.06641 13.7188 7.03516C13.7188 6.03516 13.8125 3.84766 13.4375 2.91016C13.1875 2.31641 12.7188 1.81641 12.125 1.59766C11.1875 1.22266 9 1.31641 8 1.31641C6.96875 1.31641 4.78125 1.22266 3.875 1.59766C3.25 1.84766 2.78125 2.31641 2.53125 2.91016C2.15625 3.84766 2.25 6.03516 2.25 7.03516C2.25 8.06641 2.15625 10.2539 2.53125 11.1602C2.78125 11.7852 3.25 12.2539 3.875 12.5039C4.78125 12.8789 6.96875 12.7852 8 12.7852C9 12.7852 11.1875 12.8789 12.125 12.5039C12.7188 12.2539 13.2188 11.7852 13.4375 11.1602Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- site bear  -->
+    <div class="offcanvas offcanvas-end site__bar" tabindex="-1" id="offcanvasDarkSitebar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+            <a class="header-logo" href="/">
+                <img src="./assets/images/Hunky.png" alt="Logo">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="header__contact--info">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic autem quaerat natus et consectetur
+                    nihil cumque sunt sint rerum dolores.</p>
+                <div class="socile__link">
+                    <div class="socile__icon">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.71875 9H6.375V16H3.25V9H0.6875V6.125H3.25V3.90625C3.25 1.40625 4.75 0 7.03125 0C8.125 0 9.28125 0.21875 9.28125 0.21875V2.6875H8C6.75 2.6875 6.375 3.4375 6.375 4.25V6.125H9.15625L8.71875 9Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                    <div class="socile__icon">
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.3438 3.78516C14.3438 3.94141 14.3438 4.06641 14.3438 4.22266C14.3438 8.56641 11.0625 13.5352 5.03125 13.5352C3.15625 13.5352 1.4375 13.0039 0 12.0664C0.25 12.0977 0.5 12.1289 0.78125 12.1289C2.3125 12.1289 3.71875 11.5977 4.84375 10.7227C3.40625 10.6914 2.1875 9.75391 1.78125 8.44141C2 8.47266 2.1875 8.50391 2.40625 8.50391C2.6875 8.50391 3 8.44141 3.25 8.37891C1.75 8.06641 0.625 6.75391 0.625 5.16016V5.12891C1.0625 5.37891 1.59375 5.50391 2.125 5.53516C1.21875 4.94141 0.65625 3.94141 0.65625 2.81641C0.65625 2.19141 0.8125 1.62891 1.09375 1.16016C2.71875 3.12891 5.15625 4.44141 7.875 4.59766C7.8125 4.34766 7.78125 4.09766 7.78125 3.84766C7.78125 2.03516 9.25 0.566406 11.0625 0.566406C12 0.566406 12.8438 0.941406 13.4688 1.59766C14.1875 1.44141 14.9062 1.16016 15.5312 0.785156C15.2812 1.56641 14.7812 2.19141 14.0938 2.59766C14.75 2.53516 15.4062 2.34766 15.9688 2.09766C15.5312 2.75391 14.9688 3.31641 14.3438 3.78516Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                    <div class="socile__icon">
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.125 15.0352H0.21875V5.69141H3.125V15.0352ZM1.65625 4.44141C0.75 4.44141 0 3.66016 0 2.72266C0 1.44141 1.375 0.628906 2.5 1.28516C3.03125 1.56641 3.34375 2.12891 3.34375 2.72266C3.34375 3.66016 2.59375 4.44141 1.65625 4.44141ZM13.9688 15.0352H11.0938V10.5039C11.0938 9.41016 11.0625 8.03516 9.5625 8.03516C8.0625 8.03516 7.84375 9.19141 7.84375 10.4102V15.0352H4.9375V5.69141H7.71875V6.97266H7.75C8.15625 6.25391 9.09375 5.47266 10.5 5.47266C13.4375 5.47266 14 7.41016 14 9.91016V15.0352H13.9688Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="socile__icon">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 3.44141C9.96875 3.44141 11.5938 5.06641 11.5938 7.03516C11.5938 9.03516 9.96875 10.6289 8 10.6289C6 10.6289 4.40625 9.03516 4.40625 7.03516C4.40625 5.06641 6 3.44141 8 3.44141ZM8 9.37891C9.28125 9.37891 10.3125 8.34766 10.3125 7.03516C10.3125 5.75391 9.28125 4.72266 8 4.72266C6.6875 4.72266 5.65625 5.75391 5.65625 7.03516C5.65625 8.34766 6.71875 9.37891 8 9.37891ZM12.5625 3.31641C12.5625 2.84766 12.1875 2.47266 11.7188 2.47266C11.25 2.47266 10.875 2.84766 10.875 3.31641C10.875 3.78516 11.25 4.16016 11.7188 4.16016C12.1875 4.16016 12.5625 3.78516 12.5625 3.31641ZM14.9375 4.16016C15 5.31641 15 8.78516 14.9375 9.94141C14.875 11.0664 14.625 12.0352 13.8125 12.8789C13 13.6914 12 13.9414 10.875 14.0039C9.71875 14.0664 6.25 14.0664 5.09375 14.0039C3.96875 13.9414 3 13.6914 2.15625 12.8789C1.34375 12.0352 1.09375 11.0664 1.03125 9.94141C0.96875 8.78516 0.96875 5.31641 1.03125 4.16016C1.09375 3.03516 1.34375 2.03516 2.15625 1.22266C3 0.410156 3.96875 0.160156 5.09375 0.0976562C6.25 0.0351562 9.71875 0.0351562 10.875 0.0976562C12 0.160156 13 0.410156 13.8125 1.22266C14.625 2.03516 14.875 3.03516 14.9375 4.16016ZM13.4375 11.1602C13.8125 10.2539 13.7188 8.06641 13.7188 7.03516C13.7188 6.03516 13.8125 3.84766 13.4375 2.91016C13.1875 2.31641 12.7188 1.81641 12.125 1.59766C11.1875 1.22266 9 1.31641 8 1.31641C6.96875 1.31641 4.78125 1.22266 3.875 1.59766C3.25 1.84766 2.78125 2.31641 2.53125 2.91016C2.15625 3.84766 2.25 6.03516 2.25 7.03516C2.25 8.06641 2.15625 10.2539 2.53125 11.1602C2.78125 11.7852 3.25 12.2539 3.875 12.5039C4.78125 12.8789 6.96875 12.7852 8 12.7852C9 12.7852 11.1875 12.8789 12.125 12.5039C12.7188 12.2539 13.2188 11.7852 13.4375 11.1602Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                </div>
+                <img class="site__ber--img" src="./assets/images/site-ber.jpg" alt="site ber image" srcset="">
+                <div class="header__location">
+                    <div class="header__contact--icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18 0C11.6743 0 6.39844 5.09555 6.39844 11.6016C6.39844 14.0767 7.1422 16.2838 8.56962 18.352L17.1122 31.6818C17.5266 32.3298 18.4743 32.3286 18.8878 31.6818L27.4674 18.3066C28.8641 16.3322 29.6016 14.0138 29.6016 11.6016C29.6016 5.20446 24.3971 0 18 0ZM18 16.875C15.0924 16.875 12.7266 14.5092 12.7266 11.6016C12.7266 8.69393 15.0924 6.32812 18 6.32812C20.9076 6.32812 23.2734 8.69393 23.2734 11.6016C23.2734 14.5092 20.9076 16.875 18 16.875Z"
+                                fill="white" />
+
+                        </svg>
+
+                    </div>
+                    <h4>Address</h4>
+                    <ul>
+                        <li>254, North City,</li>
+                        <li>Bulex Center, New York</li>
+                    </ul>
+                </div>
+                <div class="header__contact">
+                    <div class="header__contact--icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 4H2V20H22V4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="white" />
+                        </svg>
+
+                    </div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>exumple@gmail.com</li>
+                        <li>212-555-1234</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header end  -->
     <!-- bootstrap js link  -->
     <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
 
