@@ -128,6 +128,7 @@ h2{
     font-family: var(--font-clash);
     font-weight: 600;
     line-height: 16px;
+    padding: 16px 0;
     color: var(--color-black);
     text-transform: uppercase;
 }
@@ -137,7 +138,7 @@ h2{
 .nav__dropdawn ul{
    position: absolute;
    background: var(--color-white);
-   top: 35px;
+   top: 50px;
    width: 220px;
     box-shadow: 0 8px 65px rgba(20, 20, 20, 0.267);
    opacity: 0;
