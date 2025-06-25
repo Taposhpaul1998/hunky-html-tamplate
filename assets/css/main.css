@@ -694,6 +694,10 @@ h4 {
     margin-bottom: 54px;
 }
 
+.experiences__section .header__title h2 {
+    color: var(--color-black);
+}
+
 .experiences__section .header__url {
     display: flex;
     justify-content: flex-end;
@@ -760,6 +764,71 @@ h4 {
 
 @media screen and (max-width:576px) {
     .experiences__section {
+        padding-inline: 20px;
+    }
+}
+
+/* our projects section  */
+.projects__section {
+    padding: 130px 0;
+}
+
+.projects__section .header__title h2 {
+    color: var(--color-black);
+    margin-bottom: 54px;
+}
+
+.projects__section .projects__cart--left {
+    padding-right: 30px;
+}
+
+.projects__section .projects__cart--right {
+    padding-left: 30px;
+}
+
+.projects__section .project__cart .project__cart--img {
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+
+.projects__section .project__cart .project__cart--img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects__section .project__cart h4 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 8px;
+    color: var(--color-black);
+}
+
+.projects__section .project__cart p {
+    font-size: 18px;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--color-black);
+}
+
+@media screen and (max-width:992px) {
+    .projects__section {
+        padding: 90px 0 90px 0;
+    }
+
+    .projects__section .projects__cart--left {
+        padding-right: 0;
+    }
+
+    .projects__section .projects__cart--right {
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .projects__section {
         padding-inline: 20px;
     }
 }
