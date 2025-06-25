@@ -818,11 +818,12 @@ h4 {
     }
 
     .projects__section .projects__cart--left {
-        padding-right: 0;
+        padding-inline: 0;
     }
 
     .projects__section .projects__cart--right {
-        padding-left: 0;
+        padding-inline: 0;
+
     }
 
 }
@@ -830,5 +831,9 @@ h4 {
 @media screen and (max-width:576px) {
     .projects__section {
         padding: 60px 20px;
+    }
+
+    .projects__section .project__cart h4 {
+        font-size: 24px;
     }
 }
