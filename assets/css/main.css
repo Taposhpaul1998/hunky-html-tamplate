@@ -674,13 +674,13 @@ h4 {
 
 @media screen and (max-width:992px) {
     .client__section {
-        padding: 90px 0 90px 0;
+        padding: 90px 0;
     }
 }
 
 @media screen and (max-width:576px) {
     .client__section {
-        padding-inline: 20px;
+        padding: 60px 20px;
     }
 }
 
@@ -749,7 +749,7 @@ h4 {
 
 @media screen and (max-width:992px) {
     .experiences__section {
-        padding: 90px 0 90px 0;
+        padding: 90px 0;
     }
 
     .experiences__section .header__title {
@@ -764,7 +764,7 @@ h4 {
 
 @media screen and (max-width:576px) {
     .experiences__section {
-        padding-inline: 20px;
+        padding: 60px 20px;
     }
 }
 
@@ -814,7 +814,7 @@ h4 {
 
 @media screen and (max-width:992px) {
     .projects__section {
-        padding: 90px 0 90px 0;
+        padding: 90px 0;
     }
 
     .projects__section .projects__cart--left {
@@ -829,6 +829,6 @@ h4 {
 
 @media screen and (max-width:576px) {
     .projects__section {
-        padding-inline: 20px;
+        padding: 60px 20px;
     }
 }
