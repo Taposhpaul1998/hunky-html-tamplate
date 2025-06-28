@@ -72,7 +72,7 @@ h2 {
 }
 
 h3 {
-    font-size: 36px;
+    font-size: clamp(1.625rem, 1.3963rem + 0.9756vw, 2.25rem);
     font-family: var(--font-clash);
     font-weight: 700;
     line-height: 36px;
@@ -734,7 +734,7 @@ h4 {
 }
 
 .experiences__info__discrip h5 {
-    font-size: 54px;
+    font-size: clamp(2.75rem, 2.5213rem + 0.9756vw, 3.375rem);
     font-family: var(--font-clash);
     font-weight: 800;
     color: var(--color-black);
@@ -809,9 +809,9 @@ h4 {
 }
 
 .projects__section .project__cart h4 {
-    font-size: 36px;
+    font-size: clamp(1.625rem, 1.3963rem + 0.9756vw, 2.25rem);
     font-weight: 700;
-    line-height: 36px;
+    line-height: clamp(1.625rem, 1.3963rem + 0.9756vw, 2.25rem);
     margin-bottom: 8px;
     color: var(--color-black);
 }
@@ -1112,4 +1112,63 @@ h4 {
         gap: 25px;
     }
 
+}
+
+/* our team setcion  */
+.our__team {
+    padding: 130px 0;
+}
+
+.our__team .header__title {
+    margin-bottom: 54px;
+}
+
+.our__team .header__title h2 {
+    color: var(--color-black);
+}
+
+.team__cart {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.team__cart img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 28px;
+}
+
+.team__cart h4 {
+    font-size: 24px;
+    font-family: var(--font-clash);
+    font-weight: 600;
+    line-height: 24px;
+    padding-bottom: 8px;
+    color: var(--color-black);
+}
+
+.team__cart p {
+    font-size: 16px;
+    font-family: var(--font-clash);
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--color-black);
+}
+
+@media screen and (max-width:992px) {
+    .our__team {
+        padding: 90px 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .our__team {
+        padding: 60px 20px;
+    }
+
+    .our__team .header__title {
+        margin-bottom: 42px;
+    }
 }
