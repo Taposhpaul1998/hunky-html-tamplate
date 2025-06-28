@@ -998,3 +998,118 @@ h4 {
         padding: 60px 20px;
     }
 }
+
+/* testimonial section  */
+.testimonial__section {
+    padding: 130px 0;
+}
+
+.testimonial__col--left .header__title {
+    color: var(--color-black);
+    position: sticky;
+    top: 130px;
+}
+
+.testimonial__col--left .header__title h2 {
+    padding-bottom: 28px;
+}
+
+.testimonial__col--left .header__title p {
+    font-size: 18px;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.testimonial__col--right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.testimonial__cart {
+    padding: 40px 36px;
+    background-color: var(--color-bacground);
+}
+
+.testimonial__cart .testimonial__icon {
+    margin-bottom: 26px;
+}
+
+.testimonial__cart p {
+    font-size: 18px;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 32px;
+}
+
+.testimonial__cart .client {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial__cart .client__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+
+.testimonial__cart .client__info .client__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonial__cart .client__info .client__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial__cart .client__info .client__name h4 {
+    line-height: 24px;
+    color: var(--color-black);
+    padding-bottom: 8px;
+}
+
+.testimonial__cart .client__info .client__name span {
+    font-size: 16px;
+    font-family: var(--font-clash);
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--color-black);
+}
+
+.testimonial__cart .rating {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+@media screen and (max-width:992px) {
+    .testimonial__section {
+        padding: 90px 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .testimonial__section {
+        padding: 60px 20px;
+    }
+
+    .testimonial__cart p {
+        padding-bottom: 15px
+    }
+
+    .testimonial__cart .client {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 25px;
+    }
+
+}
