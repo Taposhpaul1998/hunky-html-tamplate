@@ -1444,3 +1444,41 @@ h4 {
         padding-inline: 20px;
     }
 }
+
+.branding__section {
+    padding: 130px 0;
+}
+
+.branding__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(14, 14, 14, 0.200);
+    padding: 7px 0;
+}
+
+.Brand__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:992px) {
+    .branding__section {
+        padding: 90px 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .Brand__btn {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .branding__section {
+        padding: 60px 20;
+    }
+
+}
