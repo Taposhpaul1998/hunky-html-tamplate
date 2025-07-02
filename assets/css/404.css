@@ -1,0 +1,50 @@
+@import "main.css";
+
+/* 404 not found section  */
+.not__found {
+    padding: 130px 0;
+}
+
+.not__found--info {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.not__found--info img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 28px;
+}
+
+.not__found--info h3 {
+    color: var(--color-black);
+    margin-bottom: 14px;
+}
+
+.not__found--info p {
+    font-size: 18px;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--color-black);
+    margin-bottom: 34px;
+}
+
+.not__found--info .primary__btn--green--yellow:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+@media screen and (max-width:992px) {
+    .not__found {
+        padding: 90px 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .not__found {
+        padding: 60px 20px;
+    }
+}
