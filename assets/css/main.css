@@ -341,6 +341,10 @@ h4 {
     background-color: var(--color-white);
 }
 
+.header__sticky .header__hamburger--nav span {
+    background-color: var(--color-black);
+}
+
 /* mobile nav  */
 .mobile__nav .offcanvas-header {
     padding: 20px;
@@ -386,11 +390,6 @@ h4 {
     background-color: var(--color-black);
     color: #fff;
 }
-
-/* .mobile__dropdawn:hover>ul {
-    display: block;
-    transition: all .3s;
-} */
 
 .mobile__dropdawn--second ul li a {
     padding-left: 50px;
