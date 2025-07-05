@@ -21,6 +21,19 @@ $(document).ready(function () {
         freeMode: true,
         freeModeMomentum: false,
     })
+    // slider 2
+    const swiper2 = new Swiper(".testimonial__slider", {
+        slidesPerView: "auto",
+        loop: true,
+        speed: 4000,
+        autoplay: {
+            delay: 3000,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        }
+    })
 
 })
 
