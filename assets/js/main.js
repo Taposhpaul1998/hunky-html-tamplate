@@ -33,9 +33,7 @@ $(document).ready(function () {
                 scrollTrigger: {
                     trigger: image,
                     start: "top 80%",
-                    end: "bottom 20%",
-                    toggleActions: "play pause resume none",
-                    once: false
+                    end: "bottom 20%"
                 }
             }
         )
@@ -57,8 +55,6 @@ $(document).ready(function () {
                     trigger: image,
                     start: "top 80%",
                     end: "bottom 20%",
-                    toggleActions: "play pause resume none",
-                    once: false
                 }
             }
         )
