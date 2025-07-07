@@ -27,7 +27,9 @@ $(document).ready(function () {
                 snap: { innerText: 1 },
                 scrollTrigger: {
                     trigger: element,
-                    start: "top 80%"
+                    start: "top 80%",
+                    toggleActions: "play pause resume none",
+                    immediateRender: false,
                 }
             }
 
@@ -37,18 +39,45 @@ $(document).ready(function () {
 
     // gsap fade in animation 
     gsap.utils.toArray(".fade-in").forEach((element, i) => {
+
+        const elementData = element.dataset.delay;
+        const delay = (elementData ? parseFloat(elementData) : i) * 0.1;
+
         gsap.fromTo(
             element,
-            { opacity: 0, y: 100 },
+            { opacity: 0, y: 150 },
             {
                 opacity: 1,
                 y: 0,
-                duration: .5,
-                delay: i * 0.1,
-                ease: "power3.out",
+                duration: 0.5,
+                delay: delay,
+                ease: "power2.out",
                 scrollTrigger: {
                     trigger: element,
-                    start: "top 80%"
+                    start: "top 80%",
+                    toggleActions: "play pause resume none",
+                    immediateRender: false
+                }
+            }
+        );
+    });
+
+    // gsap fade in animation 
+    gsap.utils.toArray(".fade-right").forEach((element) => {
+
+        gsap.fromTo(
+            element,
+            { opacity: 0, x: 100 },
+            {
+                opacity: 1,
+                x: 0,
+                duration: 0.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 80%",
+                    toggleActions: "play pause resume none",
+                    immediateRender: false
                 }
             }
         );
@@ -58,7 +87,6 @@ $(document).ready(function () {
     const images = gsap.utils.toArray(".image-reveal");
     images.forEach((image) => {
         const position = image.dataset.position;
-        const img = image.querySelector("img");
 
         var clipStart = "inset(0 100% 0 0)";
         // Debugging line to check position
@@ -98,10 +126,18 @@ $(document).ready(function () {
                 scrollTrigger: {
                     trigger: image,
                     start: "top 80%",
+                    toggleActions: "play pause resume none",
+                    immediateRender: false,
                 }
             }
         );
 
+    });
+
+    // refresh scroll trigger for reload 
+
+    window.addEventListener("load", () => {
+        ScrollTrigger.refresh();
     });
 
     // swiper slider 
