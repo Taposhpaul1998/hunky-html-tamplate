@@ -12,53 +12,97 @@ $(document).ready(function () {
     // gsap animation
     gsap.registerPlugin(ScrollTrigger);
 
-    // images animation
+    // gsap counter 
 
-    const leftimages = gsap.utils.toArray(".img__slide--left-to-right");
-    const rightimages = gsap.utils.toArray(".img__slide--right-to-left");
+    gsap.utils.toArray(".counter").forEach((element) => {
+        const count = element.dataset.count;
 
-    leftimages.forEach((image) => {
-        gsap.fromTo(image,
+        gsap.fromTo(
+            element,
+            { innerText: 0 },
             {
-                x: "-5%",
-                clipPath: "inset(0 100% 0 0)",
-                opacity: 0,
-            },
-            {
-                x: "0",
-                clipPath: "inset(0 0% 0 0)",
-                opacity: 1,
+                innerText: count,
                 duration: 1,
                 ease: "power2.out",
+                snap: { innerText: 1 },
                 scrollTrigger: {
-                    trigger: image,
-                    start: "top 80%",
-                    end: "bottom 20%"
+                    trigger: element,
+                    start: "top 80%"
                 }
             }
+
         )
-    });
-    rightimages.forEach((image) => {
-        gsap.fromTo(image,
-            {
-                x: "5%",
-                clipPath: "inset(0 0 0 100%)",
-                opacity: 0,
-            },
-            {
-                x: "0",
-                clipPath: "inset(0 0 0 0%)",
-                opacity: 1,
-                duration: 1,
-                ease: "power2.out",
-                scrollTrigger: {
-                    trigger: image,
-                    start: "top 80%",
-                    end: "bottom 20%",
-                }
-            }
-        )
+
     })
+
+    // gsap fade in animation 
+    gsap.utils.toArray(".fade-in").forEach((element, i) => {
+        gsap.fromTo(
+            element,
+            { opacity: 0, y: 100 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: .5,
+                delay: i * 0.1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 80%"
+                }
+            }
+        );
+    });
+
+    // images animation
+    const images = gsap.utils.toArray(".image-reveal");
+    images.forEach((image) => {
+        const position = image.dataset.position;
+        const img = image.querySelector("img");
+
+        var clipStart = "inset(0 100% 0 0)";
+        // Debugging line to check position
+
+        switch (position) {
+            case "left":
+                clipStart = "inset(0 100% 0 0)";
+                break;
+            case "right":
+                clipStart = "inset(0 0 0 100%)";
+                break;
+            case "top":
+                clipStart = "inset(100% 0 0 0)";
+                break;
+            case "bottom":
+                clipStart = "inset(0 0 100% 0)";
+                break;
+            default:
+                clipStart = "inset(0 0 0 0)";
+        }
+
+        gsap.fromTo(
+            image,
+            {
+                clipPath: clipStart,
+                opacity: 0,
+                x: position === "left" ? "-5%" : position === "right" ? "5%" : "0",
+                y: position === "top" ? "-5%" : position === "bottom" ? "5%" : "0"
+            },
+            {
+                clipPath: "inset(0% 0% 0% 0%)",
+                opacity: 1,
+                x: "0",
+                y: "0",
+                duration: 1,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: image,
+                    start: "top 80%",
+                }
+            }
+        );
+
+    });
 
     // swiper slider 
     const swiper = new Swiper(".runing__swiper", {
