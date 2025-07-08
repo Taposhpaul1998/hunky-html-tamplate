@@ -253,15 +253,23 @@
     gap: 16px;
 }
 
-.blog__siteber--categories ul li {
-    font-size: 18px;
-    font-family: var(--font-poppins);
-    font-weight: 400;
-    line-height: 30px;
-    color: var(--color-black);
+.blog__siteber--categories ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.blog__siteber--categories ul li a span {
+    font-size: 16px;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--color-black);
+    transition: all .3s;
+}
+
+.blog__siteber--categories ul li a span:hover {
+    color: var(--color-green-yellow);
 }
 
 .blog__siteber--post {
@@ -274,17 +282,17 @@
     gap: 24px;
 }
 
-.blog__siteber--post ul li {
+.blog__siteber--post ul li a {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.blog__siteber--post ul li .post__img img {
+.blog__siteber--post ul li a .post__img img {
     vertical-align: middle;
 }
 
-.blog__siteber--post ul li .post__info h5 {
+.blog__siteber--post ul li a .post__info h5 {
     font-size: 20px;
     font-family: var(--font-clash);
     font-weight: 600;
@@ -293,7 +301,7 @@
     margin-bottom: 8px;
 }
 
-.blog__siteber--post ul li .post__info p {
+.blog__siteber--post ul li a .post__info p {
     font-size: 16px;
     font-family: var(--font-poppins);
     font-weight: 400;
@@ -328,6 +336,11 @@
     font-weight: 400;
     line-height: 30px;
     color: var(--color-black);
+    transition: all .3s;
+}
+
+.blog__siteber--tags ul li a:hover {
+    color: var(--color-green-yellow);
 }
 
 @media screen and (max-width:992px) {
@@ -434,6 +447,11 @@
     font-weight: 400;
     line-height: 30px;
     color: var(--color-black);
+    transition: all .3s;
+}
+
+.tags__shear--tags ul li a:hover {
+    color: var(--color-green-yellow);
 }
 
 .tags__shear--shear {
