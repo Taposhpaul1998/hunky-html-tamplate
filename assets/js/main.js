@@ -10,7 +10,7 @@ $(document).ready(function () {
     })
 
     // gsap animation
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger, SplitText);
 
     // gsap counter 
 
@@ -36,6 +36,32 @@ $(document).ready(function () {
         )
 
     })
+    // text animation 
+
+    $(".header__title").each(function (i) {
+        const $h2 = $(this).find("h2");
+
+        if ($h2.length) {
+            const split = new SplitText($h2[0])
+            const chars = split.chars
+
+            gsap.fromTo(chars,
+                { opacity: 0, x: 50 },
+                {
+                    opacity: 1,
+                    x: 0,
+                    duration: 0.5,
+                    stagger: 0.05,
+                    scrollTrigger: {
+                        trigger: chars,
+                        start: "top bottom",
+                        toggleActions: "play pause resume none",
+                        immediateRender: false
+                    }
+                }
+            )
+        }
+    })
 
     // gsap fade in animation 
     gsap.utils.toArray(".fade-in").forEach((element, i) => {
@@ -45,11 +71,11 @@ $(document).ready(function () {
 
         gsap.fromTo(
             element,
-            { opacity: 0, y: 150 },
+            { opacity: 0, y: 200 },
             {
                 opacity: 1,
                 y: 0,
-                duration: 0.5,
+                duration: 0.3,
                 delay: delay,
                 ease: "power2.out",
                 scrollTrigger: {

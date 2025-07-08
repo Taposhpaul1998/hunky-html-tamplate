@@ -537,6 +537,11 @@ h4 {
     font-weight: 600;
     line-height: 16px;
     color: var(--color-white);
+    transition: all .3s;
+}
+
+.footer__nav ul li a:hover {
+    color: var(--color-green-yellow);
 }
 
 /* copy right  */
@@ -544,12 +549,17 @@ h4 {
     padding-top: 24px;
 }
 
-.copy__right span {
+.copy__right a {
     font-size: 18px;
     font-family: var(--font-poppins);
     font-weight: 400;
     line-height: auto;
     color: var(--color-bacground);
+    transition: all .3s;
+}
+
+.copy__right a:hover {
+    color: var(--color-green-yellow);
 }
 
 @media screen and (max-width:992px) {

@@ -285,7 +285,18 @@
     line-height: clamp(1.625rem, 1.3963rem + 0.9756vw, 2.25rem);
     margin-bottom: 8px;
     color: var(--color-black);
+    display: inline;
+    background-size: 0% 2px;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background 0.3s linear;
+    background-image: linear-gradient(#0e0e0e, #0e0e0e);
 }
+
+.projects__section .project__cart h4:hover {
+    background-size: 100% 2px;
+}
+
 
 .project__cart p {
     font-size: 18px;
