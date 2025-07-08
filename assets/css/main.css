@@ -787,3 +787,79 @@ h4 {
     }
 
 }
+
+/* message form  */
+.massege__form .massege__titel {
+    margin-bottom: 32px;
+}
+
+.massege__form .massege__titel h3 {
+    padding-bottom: 12px;
+}
+
+.massege__form .massege__titel p {
+    font-size: 16px;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--color-black);
+}
+
+.massege__form .form__fild {
+    width: 100%;
+    border-bottom: 1.5px solid var(--color-black);
+    position: relative;
+}
+
+.massege__form .form__fild svg {
+    position: absolute;
+    top: 22px;
+    left: 2px;
+}
+
+.massege__form .form__fild input,
+textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 15px 32px;
+    font-size: 18px;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--color-black);
+}
+
+.massege__form .form__fild--textarea {
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.massege__form .form__fild textarea {
+    height: 175px;
+}
+
+.massege__form .form__fild input::placeholder,
+textarea::placeholder {
+    color: var(--color-black);
+}
+
+.massege__form .primary__btn {
+    border: none;
+    background-color: var(--color-green-yellow);
+}
+
+.massege__form .primary__btn:hover {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+@media screen and (max-width:768px) {
+    .massege__titel {
+        padding-bottom: 20px;
+    }
+
+    .massege__form .form__fild textarea {
+        height: 125px;
+    }
+}
