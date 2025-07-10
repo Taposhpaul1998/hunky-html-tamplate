@@ -1,17 +1,5 @@
 @import "main.css";
 
-/* ver  */
-:root {
-    --color-green-yellow: #88E64A;
-    --color-black: #0E0E0E;
-    --color-bacground: #F6F5F3;
-    --color-white: #FFFFFF;
-
-    /* font family  */
-    --font-clash: 'Clash Display', sans-serif;
-    --font-poppins: "Poppins", sans-serif
-}
-
 /* team section  */
 
 .team__section {
@@ -222,29 +210,6 @@
 
 .team__details--info table {
     margin-bottom: 40px;
-}
-
-.team__details--info table tbody tr td {
-    font-size: 18px;
-    font-family: var(--font-poppins);
-    font-weight: 400;
-    line-height: 30px;
-    color: #282943;
-    padding-top: 14px;
-}
-
-.team__details--info table tbody tr:first-child td {
-    padding-top: 0;
-}
-
-.team__details--info table tbody tr td:first-child {
-    font-weight: 600;
-    color: #282943;
-}
-
-.team__details--info table tbody tr td:nth-of-type(2) {
-    padding-left: 8px;
-    padding-right: 20px;
 }
 
 /* conatact me section  */
