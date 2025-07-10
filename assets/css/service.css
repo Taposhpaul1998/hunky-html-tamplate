@@ -1,0 +1,31 @@
+@import "main.css";
+;
+
+/* ver  */
+:root {
+    --color-green-yellow: #88E64A;
+    --color-black: #0E0E0E;
+    --color-bacground: #F6F5F3;
+    --color-white: #FFFFFF;
+
+    /* font family  */
+    --font-clash: 'Clash Display', sans-serif;
+    --font-poppins: "Poppins", sans-serif
+}
+
+.service__section {
+    padding: 130px 0;
+}
+
+
+@media screen and (max-width:992px) {
+    .service__section {
+        padding: 90px 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .service__section {
+        padding: 60px 20px;
+    }
+}

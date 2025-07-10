@@ -2,19 +2,6 @@
 
 @import "main.css";
 
-
-/* ver  */
-:root {
-    --color-green-yellow: #88E64A;
-    --color-black: #0E0E0E;
-    --color-bacground: #F6F5F3;
-    --color-white: #FFFFFF;
-
-    /* font family  */
-    --font-clash: 'Clash Display', sans-serif;
-    --font-poppins: "Poppins", sans-serif
-}
-
 .portfolio__section {
     padding: 130px 0;
 }
