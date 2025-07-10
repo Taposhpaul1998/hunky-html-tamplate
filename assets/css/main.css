@@ -553,7 +553,6 @@ h4 {
     font-size: 18px;
     font-family: var(--font-poppins);
     font-weight: 400;
-    line-height: auto;
     color: var(--color-bacground);
     transition: all .3s;
 }
@@ -751,7 +750,6 @@ h4 {
 
 .breadcrumb__info h1 {
     font-size: clamp(2.625rem, 1.7561rem + 3.7073vw, 5rem);
-    line-height: auto;
     color: var(--color-white);
     margin-bottom: 12px;
 }
@@ -862,4 +860,67 @@ textarea::placeholder {
     .massege__form .form__fild textarea {
         height: 125px;
     }
+}
+
+/* projects and  portfolio projects  */
+.projects__cart--left {
+    padding-right: 30px;
+}
+
+.projects__cart--right {
+    padding-left: 30px;
+}
+
+.project__cart--link {
+    width: 100%;
+}
+
+.project__cart .project__cart--img {
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+
+.project__cart .project__cart--img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project__cart h4 {
+    font-size: clamp(1.625rem, 1.3963rem + 0.9756vw, 2.25rem);
+    font-weight: 700;
+    line-height: clamp(1.625rem, 1.3963rem + 0.9756vw, 2.25rem);
+    color: var(--color-black);
+    display: inline;
+    background-size: 0% 2px;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background 0.3s linear;
+    background-image: linear-gradient(#0e0e0e, #0e0e0e);
+    margin-bottom: 8px;
+}
+
+.project__cart h4:hover {
+    background-size: 100% 2px;
+}
+
+
+.project__cart p {
+    font-size: 18px;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--color-black);
+}
+
+@media screen and (max-width:992px) {
+
+    .projects__cart--left {
+        padding-inline: 0;
+    }
+
+    .projects__cart--right {
+        padding-inline: 0;
+
+    }
+
 }

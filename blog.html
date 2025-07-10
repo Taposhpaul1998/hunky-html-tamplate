@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunky Creative Agency</title>
     <!-- font family link -->
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap"
+    <link href="https://api.fontshare.com/v2/css?f%5B%5D=clash-display@200,300,400,500,600,700,1&display=swap"
         rel="stylesheet">
     <!-- stylesheet  -->
     <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
@@ -95,14 +95,14 @@
                                 <a href="/contact.html">CONTACT</a>
                             </li>
                         </ul>
-                        <a class="header__hamburger d-none d-lg-flex" type="button" data-bs-toggle="offcanvas"
+                        <a href="" class="header__hamburger d-none d-lg-flex" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasDarkSitebar" aria-controls="offcanvasDarkNavbar"
                             aria-label="Toggle navigation">
                             <span></span>
                             <span></span>
                             <span></span>
                         </a>
-                        <a class="header__hamburger--nav d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        <a href="" class="header__hamburger--nav d-lg-none" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasDarkNavbar" aria-label="Toggle navigation">
                             <span></span>
                             <span></span>
@@ -116,7 +116,7 @@
     </header>
     <!-- mobile nav  -->
     <div class="offcanvas offcanvas-start mobile__nav" tabindex="-1" id="offcanvasDarkNavbar"
-        aria-labelledby="offcanvasDarkNavbarLabel">
+        aria-labelledby="offcanvasDarkNavbar">
         <div class="offcanvas-header">
             <a class="header-logo" href="/">
                 <img src="./assets/images/Hunky.png" alt="Logo">
@@ -263,7 +263,7 @@
     </div>
     <!-- site bear  -->
     <div class="offcanvas offcanvas-end site__bar" tabindex="-1" id="offcanvasDarkSitebar"
-        aria-labelledby="offcanvasDarkNavbarLabel" data-bs-scroll="true">
+        aria-labelledby="offcanvasDarkSitebar" data-bs-scroll="true">
         <div class="offcanvas-header">
             <a class="header-logo" href="/">
                 <img src="./assets/images/Hunky.png" alt="Logo">
@@ -307,7 +307,7 @@
 
                     </div>
                 </div>
-                <img class="site__ber--img" src="./assets/images/site-ber.jpg" alt="site ber image" srcset="">
+                <img class="site__ber--img" src="./assets/images/site-ber.jpg" alt="site ber image">
                 <div class="header__location">
                     <div class="header__contact--icon">
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -341,7 +341,6 @@
         </div>
     </div>
     <!-- header end  -->
-    <!-- main start  -->
     <main>
         <!--  breadcrumb start  -->
         <section class="breadcrumb">
@@ -372,220 +371,224 @@
             <div class="container">
                 <div class="row gy-5">
                     <div class="col-lg-4 col-md-6 fade-in" data-delay="0">
-                        <a href="/blog-details.html">
-                            <div class="blog__cart">
-                                <div class="blog__cart--img">
-                                    <img src="./assets/images/blog/blog--img-1.png" alt="blog image">
-                                    <div class="blog__cart--head">
-                                        <p>Design</p>
-                                        <p>February 12, 2024 </p>
-                                    </div>
+                        <div class="blog__cart">
+                            <div class="blog__cart--img">
+                                <img src="./assets/images/blog/blog--img-1.png" alt="blog image">
+                                <div class="blog__cart--head">
+                                    <p>Design</p>
+                                    <p>February 12, 2024 </p>
                                 </div>
-                                <div class="blog__cart--info">
+                            </div>
+                            <div class="blog__cart--info">
+                                <a href="/blog-details.html">
                                     <h4>How Digital Marketing Can Boost Your</h4>
-                                    <a class="secondary__btn" href="">READ MORE
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
-                                                stroke-linecap="square" />
-                                        </svg>
+                                </a>
+                                <a class="secondary__btn" href=""> READ MORE
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
+                                            stroke-linecap="square" />
+                                    </svg>
 
-                                    </a>
-                                </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 fade-in" data-delay="1">
-                        <a href="/blog-details.html">
-                            <div class="blog__cart">
-                                <div class="blog__cart--img">
-                                    <img src="./assets/images/blog/blog--img-2.png" alt="blog image">
-                                    <div class="blog__cart--head">
-                                        <p>Marketing</p>
-                                        <p>February 14, 2024 </p>
-                                    </div>
+                        <div class="blog__cart">
+                            <div class="blog__cart--img">
+                                <img src="./assets/images/blog/blog--img-2.png" alt="blog image">
+                                <div class="blog__cart--head">
+                                    <p>Marketing</p>
+                                    <p>February 14, 2024 </p>
                                 </div>
-                                <div class="blog__cart--info">
+                            </div>
+                            <div class="blog__cart--info">
+                                <a href="/blog-details.html">
                                     <h4>Graphic Design Agency your Brand Needs.</h4>
-                                    <a class="secondary__btn" href="">READ MORE
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
-                                                stroke-linecap="square" />
-                                        </svg>
+                                </a>
+                                <a class="secondary__btn" href="">READ MORE
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
+                                            stroke-linecap="square" />
+                                    </svg>
 
-                                    </a>
-                                </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 fade-in" data-delay="2">
-                        <a href="/blog-details.html">
-                            <div class="blog__cart">
-                                <div class="blog__cart--img">
-                                    <img src="./assets/images/blog/blog--img-3.png" alt="blog image">
-                                    <div class="blog__cart--head">
-                                        <p>Development</p>
-                                        <p>February 20, 2024 </p>
-                                    </div>
+                        <div class="blog__cart">
+                            <div class="blog__cart--img">
+                                <img src="./assets/images/blog/blog--img-3.png" alt="blog image">
+                                <div class="blog__cart--head">
+                                    <p>Development</p>
+                                    <p>February 20, 2024 </p>
                                 </div>
-                                <div class="blog__cart--info">
+                            </div>
+                            <div class="blog__cart--info">
+                                <a href="/blog-details.html">
                                     <h4>Providing Brilliant Ideas For your Business</h4>
-                                    <a class="secondary__btn" href="">READ MORE
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
-                                                stroke-linecap="square" />
-                                        </svg>
+                                </a>
+                                <a class="secondary__btn" href="">READ MORE
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
+                                            stroke-linecap="square" />
+                                    </svg>
 
-                                    </a>
-                                </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 fade-in" data-delay="0">
-                        <a href="/blog-details.html">
-                            <div class="blog__cart">
-                                <div class="blog__cart--img">
-                                    <img src="./assets/images/blog/blog--img-4.png" alt="blog image">
-                                    <div class="blog__cart--head">
-                                        <p>Design</p>
-                                        <p>February 12, 2024 </p>
-                                    </div>
+                        <div class="blog__cart">
+                            <div class="blog__cart--img">
+                                <img src="./assets/images/blog/blog--img-4.png" alt="blog image">
+                                <div class="blog__cart--head">
+                                    <p>Design</p>
+                                    <p>February 12, 2024 </p>
                                 </div>
-                                <div class="blog__cart--info">
+                            </div>
+                            <div class="blog__cart--info">
+                                <a href="/blog-details.html">
                                     <h4>The Latest Trends With Digital Marketing</h4>
-                                    <a class="secondary__btn" href="">READ MORE
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
-                                                stroke-linecap="square" />
-                                        </svg>
+                                </a>
 
-                                    </a>
-                                </div>
+                                <a class="secondary__btn" href="">READ MORE
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
+                                            stroke-linecap="square" />
+                                    </svg>
+
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 fade-in" data-delay="1">
-                        <a href="/blog-details.html">
-                            <div class="blog__cart">
-                                <div class="blog__cart--img">
-                                    <img src="./assets/images/blog/blog--img-5.png" alt="blog image">
-                                    <div class="blog__cart--head">
-                                        <p>Marketing</p>
-                                        <p>February 14, 2024 </p>
-                                    </div>
-                                </div>
-                                <div class="blog__cart--info">
-                                    <h4>Strategies For Speed And User Experience</h4>
-                                    <a class="secondary__btn" href="">READ MORE
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
-                                                stroke-linecap="square" />
-                                        </svg>
-
-                                    </a>
+                        <div class="blog__cart">
+                            <div class="blog__cart--img">
+                                <img src="./assets/images/blog/blog--img-5.png" alt="blog image">
+                                <div class="blog__cart--head">
+                                    <p>Marketing</p>
+                                    <p>February 14, 2024 </p>
                                 </div>
                             </div>
-                        </a>
+                            <div class="blog__cart--info">
+                                <a href="/blog-details.html">
+                                    <h4>Strategies For Speed And User Experience</h4>
+                                </a>
+                                <a class="secondary__btn" href="">READ MORE
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
+                                            stroke-linecap="square" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 fade-in" data-delay="2">
-                        <a href="/blog-details.html">
-                            <div class="blog__cart">
-                                <div class="blog__cart--img">
-                                    <img src="./assets/images/blog/blog--img-6.png" alt="blog image">
-                                    <div class="blog__cart--head">
-                                        <p>Development</p>
-                                        <p>February 20, 2024 </p>
-                                    </div>
-                                </div>
-                                <div class="blog__cart--info">
-                                    <h4>A Peek Into Our Branding Strategy</h4>
-                                    <a class="secondary__btn" href="">READ MORE
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
-                                                stroke-linecap="square" />
-                                        </svg>
-
-                                    </a>
+                        <div class="blog__cart">
+                            <div class="blog__cart--img">
+                                <img src="./assets/images/blog/blog--img-6.png" alt="blog image">
+                                <div class="blog__cart--head">
+                                    <p>Development</p>
+                                    <p>February 20, 2024 </p>
                                 </div>
                             </div>
-                        </a>
+                            <div class="blog__cart--info">
+                                <a href="/blog-details.html">
+                                    <h4>A Peek Into Our Branding Strategy</h4>
+                                </a>
+
+                                <a class="secondary__btn" href="">READ MORE
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
+                                            stroke-linecap="square" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-lg-4 col-md-6 fade-in" data-delay="0">
-                        <a href="/blog-details.html">
-                            <div class="blog__cart">
-                                <div class="blog__cart--img">
-                                    <img src="./assets/images/blog/blog--img-7.png" alt="blog image">
-                                    <div class="blog__cart--head">
-                                        <p>Design</p>
-                                        <p>February 12, 2024 </p>
-                                    </div>
-                                </div>
-                                <div class="blog__cart--info">
-                                    <h4>How to Design Packaging for your</h4>
-                                    <a class="secondary__btn" href="">READ MORE
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
-                                                stroke-linecap="square" />
-                                        </svg>
-
-                                    </a>
+                        <div class="blog__cart">
+                            <div class="blog__cart--img">
+                                <img src="./assets/images/blog/blog--img-7.png" alt="blog image">
+                                <div class="blog__cart--head">
+                                    <p>Design</p>
+                                    <p>February 12, 2024 </p>
                                 </div>
                             </div>
-                        </a>
+                            <div class="blog__cart--info">
+                                <a href="/blog-details.html">
+                                    <h4>How to Design Packaging for your</h4>
+                                </a>
+                                <a class="secondary__btn" href="">READ MORE
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
+                                            stroke-linecap="square" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-lg-4 col-md-6 fade-in" data-delay="1">
-                        <a href="/blog-details.html">
-                            <div class="blog__cart">
-                                <div class="blog__cart--img">
-                                    <img src="./assets/images/blog/blog--img-8.png" alt="blog image">
-                                    <div class="blog__cart--head">
-                                        <p>Marketing</p>
-                                        <p>February 14, 2024 </p>
-                                    </div>
-                                </div>
-                                <div class="blog__cart--info">
-                                    <h4>How To Create Productive Meeting</h4>
-                                    <a class="secondary__btn" href="">READ MORE
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
-                                                stroke-linecap="square" />
-                                        </svg>
-
-                                    </a>
+                        <div class="blog__cart">
+                            <div class="blog__cart--img">
+                                <img src="./assets/images/blog/blog--img-8.png" alt="blog image">
+                                <div class="blog__cart--head">
+                                    <p>Marketing</p>
+                                    <p>February 14, 2024 </p>
                                 </div>
                             </div>
-                        </a>
+                            <div class="blog__cart--info">
+                                <a href="/blog-details.html">
+                                    <h4>How To Create Productive Meeting</h4>
+                                </a>
+                                <a class="secondary__btn" href="">READ MORE
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
+                                            stroke-linecap="square" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 fade-in" data-delay="2">
-                        <a href="/blog-details.html">
-                            <div class="blog__cart">
-                                <div class="blog__cart--img">
-                                    <img src="./assets/images/blog/blog--img-9.png" alt="blog image">
-                                    <div class="blog__cart--head">
-                                        <p>Development</p>
-                                        <p>February 20, 2024 </p>
-                                    </div>
-                                </div>
-                                <div class="blog__cart--info">
-                                    <h4>Embracing Inclusion For Collaborative Success</h4>
-                                    <a class="secondary__btn" href="">READ MORE
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
-                                                stroke-linecap="square" />
-                                        </svg>
-
-                                    </a>
+                        <div class="blog__cart">
+                            <div class="blog__cart--img">
+                                <img src="./assets/images/blog/blog--img-9.png" alt="blog image">
+                                <div class="blog__cart--head">
+                                    <p>Development</p>
+                                    <p>February 20, 2024 </p>
                                 </div>
                             </div>
-                        </a>
+                            <div class="blog__cart--info">
+                                <a href="/blog-details.html">
+                                    <h4>Embracing Inclusion For Collaborative Success</h4>
+                                </a>
+                                <a class="secondary__btn" href="">READ MORE
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 11L11.2 1.8M12 11V1H2" stroke="#0E0E0E" stroke-width="2"
+                                            stroke-linecap="square" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
