@@ -80,7 +80,7 @@ $(document).ready(function () {
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: element,
-                    start: "top 80%",
+                    start: "top bottom",
                     toggleActions: "play pause resume none",
                     immediateRender: false
                 }
