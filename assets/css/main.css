@@ -641,6 +641,89 @@ table tbody tr td:nth-of-type(2) {
     margin-bottom: 32px;
 }
 
+/* experiences section style  */
+.experiences__section {
+    padding: 130px 0 130px 0;
+    background-color: var(--color-bacground);
+}
+
+.experiences__section .header__title {
+    margin-bottom: 54px;
+}
+
+.experiences__section .header__title h2 {
+    color: var(--color-black);
+}
+
+.experiences__section .header__url {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 54px;
+}
+
+.expriences__img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.expriences__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experiences__info {
+    background-color: var(--color-green-yellow);
+    padding: 19px 36px;
+}
+
+.experiences__info__discrip {
+    text-align: center;
+    padding: 24px 0;
+}
+
+.experiences__info__discrip h5 {
+    font-size: clamp(2.75rem, 2.5213rem + 0.9756vw, 3.375rem);
+    font-family: var(--font-clash);
+    font-weight: 800;
+    color: var(--color-black);
+    padding-bottom: 8px;
+}
+
+.experiences__info__discrip p {
+    font-size: 20px;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--color-black);
+}
+
+.experiences__info__discrip:nth-of-type(2) {
+    border-top: 1px solid rgba(14, 14, 14, 0.192);
+    border-bottom: 1px solid rgba(14, 14, 14, 0.192);
+}
+
+@media screen and (max-width:992px) {
+    .experiences__section {
+        padding: 90px 0;
+    }
+
+    .experiences__section .header__title {
+        margin-bottom: 32px;
+    }
+
+    .experiences__section .header__url {
+        justify-content: flex-start;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .experiences__section {
+        padding: 60px 20px;
+    }
+}
 
 /* choose section start  */
 .Choose__section {
@@ -791,6 +874,96 @@ table tbody tr td:nth-of-type(2) {
     }
 }
 
+/* runing slaider section  */
+.runing__section {
+    background-color: var(--color-black);
+}
+
+.runing__section .swiper-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    transition-timing-function: linear;
+}
+
+.runing__section .swiper-wrapper .swiper-slide {
+    padding: 32px 0;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: none;
+}
+
+.runing__section .swiper-wrapper .swiper-slide h4 {
+    font-size: 24px;
+    font-family: var(--font-clash);
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--color-green-yellow);
+}
+
+/* our team setcion  */
+.our__team {
+    padding: 130px 0;
+}
+
+.our__team .header__title {
+    margin-bottom: 54px;
+}
+
+.our__team .header__title h2 {
+    color: var(--color-black);
+}
+
+.team__cart {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.team__cart img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 28px;
+}
+
+.team__cart h4 {
+    font-size: 24px;
+    font-family: var(--font-clash);
+    font-weight: 600;
+    line-height: 24px;
+    padding-bottom: 8px;
+    color: var(--color-black);
+}
+
+.team__cart p {
+    font-size: 16px;
+    font-family: var(--font-clash);
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--color-black);
+}
+
+@media screen and (max-width:992px) {
+    .our__team {
+        padding: 90px 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .our__team {
+        padding: 60px 20px;
+    }
+
+    .our__team .header__title {
+        margin-bottom: 42px;
+    }
+}
+
+
 /* faq section  */
 .faq__section {
     padding: 130px 0;
@@ -937,6 +1110,45 @@ table tbody tr td:nth-of-type(2) {
     }
 }
 
+/* branding section  */
+.branding__section {
+    padding: 130px 0;
+}
+
+.branding__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(14, 14, 14, 0.200);
+    padding: 7px 0;
+}
+
+.Brand__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:992px) {
+    .branding__section {
+        padding: 90px 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .Brand__btn {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .branding__section {
+        padding: 60px 20px;
+    }
+
+}
+
 /* bread crumb section  */
 
 .breadcrumb {
@@ -1042,7 +1254,6 @@ textarea::placeholder {
 
 .massege__form .primary__btn {
     border: none;
-    background-color: var(--color-green-yellow);
 }
 
 .massege__form .primary__btn:hover {

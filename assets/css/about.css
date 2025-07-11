@@ -22,6 +22,18 @@
     position: relative;
 }
 
+.process__info--first {
+    padding-right: 24px;
+}
+
+.process__info--second {
+    padding-inline: 12px;
+}
+
+.process__info--third {
+    padding-left: 24px;
+}
+
 .process__info-img {
     width: 100%;
     height: 100%;
@@ -47,7 +59,7 @@
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='66' viewBox='0 0 12 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 0.666667C3.05448 0.666667 0.666667 3.05448 0.666667 6C0.666667 8.94552 3.05448 11.3333 6 11.3333C8.94552 11.3333 11.3333 8.94552 11.3333 6C11.3333 3.05448 8.94552 0.666667 6 0.666667ZM6 66L11.7735 56H0.226497L6 66ZM5 6L5 57H7L7 6H5Z' fill='%2388E64A'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     position: absolute;
-    top: 2px;
+    top: -12px;
     right: -36px;
     width: 12px;
     height: 66px;
@@ -55,7 +67,7 @@
 
 .process__info--second .process__info-noumber::after {
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='66' viewBox='0 0 12 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 0L0.226497 10H11.7735L6 0ZM6 54.6667C3.05448 54.6667 0.666667 57.0545 0.666667 60C0.666667 62.9455 3.05448 65.3333 6 65.3333C8.94552 65.3333 11.3333 62.9455 11.3333 60C11.3333 57.0545 8.94552 54.6667 6 54.6667ZM5 9L5 60H7L7 9H5Z' fill='%2388E64A'/%3E%3C/svg%3E%0A");
-    top: -7px;
+    top: 8px;
 }
 
 .process__info .process__info-noumber h2 {
@@ -95,6 +107,31 @@
     margin-top: 12px;
 }
 
+@media screen and (max-width:1400px) {
+    .process__info-noumber::after {
+        top: 2px;
+    }
+
+    .process__info--second .process__info-noumber::after {
+        top: -7px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .process__info--first {
+        padding-right: 0px;
+    }
+
+    .process__info--second {
+        padding-inline: 0px;
+    }
+
+    .process__info--third {
+        padding-left: 0px;
+    }
+
+}
+
 @media screen and (max-width:992px) {
     .process__section {
         padding: 90px 0;
@@ -112,4 +149,138 @@
         padding: 60px 2px;
     }
 
+}
+
+/* award section  */
+.award__section {
+    padding: 130px 0;
+}
+
+.award {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.200);
+    padding-bottom: 28px;
+}
+
+.award--first {
+    padding-top: 24px;
+    border-top: 2px solid rgba(0, 0, 0, 0.200);
+}
+
+.award__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.award__type {
+    width: 290px;
+}
+
+.award__type h5 {
+    font-size: 16px;
+    font-family: var(--font-clash);
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.award__name h3 {
+    color: var(--color-black);
+    margin-bottom: 8px;
+}
+
+.award__name p {
+    font-size: 16px;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--color-black);
+}
+
+.award__year h4 {
+    color: var(--color-black);
+}
+
+@media screen and (max-width:992px) {
+    .award__section {
+        padding: 90px 0;
+    }
+
+    .award__type {
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .award {
+        flex-direction: column;
+        align-items: start;
+        gap: 24px;
+    }
+
+    .award__info {
+        flex-direction: column;
+        align-items: start;
+        gap: 24px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .award__section {
+        padding: 60px 2px;
+    }
+
+}
+
+/* about contact section  */
+.about__contact {
+    position: relative;
+}
+
+.about__contact .header__title {
+    margin-bottom: 54px;
+}
+
+.about__contact-area {
+    padding-top: 45px;
+    padding-bottom: 60px;
+    background-color: var(--color-green-yellow);
+}
+
+.about__contact-area .form__fild input,
+textarea {
+    background-color: var(--color-green-yellow);
+}
+
+.about__contact-area .primary__btn--about {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.about__contact-area .primary__btn--about:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.google__map-area {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 60%;
+}
+
+@media screen and (max-width:992px) {
+    .about__contact {
+        position: inherit;
+    }
+
+    .google__map-area {
+        position: inherit;
+        height: 300px
+    }
 }
