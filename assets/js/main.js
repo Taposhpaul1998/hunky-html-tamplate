@@ -63,8 +63,9 @@ $(document).ready(function () {
         }
     })
 
-    // gsap fade in group animation 
+    // gsap fade in animation 
     gsap.utils.toArray(".fade-in").forEach((element, i) => {
+        const singleAnimi = element.dataset.name
 
         const elementData = element.dataset.delay;
         const delay = (elementData ? parseFloat(elementData) : i) * 0.15;
@@ -76,7 +77,7 @@ $(document).ready(function () {
                 opacity: 1,
                 y: 0,
                 duration: 0.2,
-                delay: delay === 0 ? .1 : delay,
+                delay: singleAnimi === "single" ? 0 : (delay === 0 ? .1 : delay),
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: element,
@@ -88,25 +89,6 @@ $(document).ready(function () {
         );
     });
 
-    // gsap single fade in animation 
-    gsap.utils.toArray(".fade-up").forEach((element) => {
-        gsap.fromTo(
-            element,
-            { opacity: 0, y: 100 },
-            {
-                opacity: 1,
-                y: 0,
-                duration: 0.5,
-                ease: "power2.out",
-                scrollTrigger: {
-                    trigger: element,
-                    start: "top 80%",
-                    toggleActions: "play pause resume none",
-                    immediateRender: false
-                }
-            }
-        );
-    });
     // gsap fade right animation 
     gsap.utils.toArray(".fade-right").forEach((element) => {
         gsap.fromTo(
