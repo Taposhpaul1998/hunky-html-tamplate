@@ -63,11 +63,11 @@ $(document).ready(function () {
         }
     })
 
-    // gsap fade in animation 
+    // gsap fade in group animation 
     gsap.utils.toArray(".fade-in").forEach((element, i) => {
 
         const elementData = element.dataset.delay;
-        const delay = (elementData ? parseFloat(elementData) : i) * 0.1;
+        const delay = (elementData ? parseFloat(elementData) : i) * 0.15;
 
         gsap.fromTo(
             element,
@@ -75,8 +75,8 @@ $(document).ready(function () {
             {
                 opacity: 1,
                 y: 0,
-                duration: 0.3,
-                delay: delay,
+                duration: 0.2,
+                delay: delay === 0 ? .1 : delay,
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: element,
@@ -88,9 +88,27 @@ $(document).ready(function () {
         );
     });
 
-    // gsap fade in animation 
+    // gsap single fade in animation 
+    gsap.utils.toArray(".fade-up").forEach((element) => {
+        gsap.fromTo(
+            element,
+            { opacity: 0, y: 100 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 80%",
+                    toggleActions: "play pause resume none",
+                    immediateRender: false
+                }
+            }
+        );
+    });
+    // gsap fade right animation 
     gsap.utils.toArray(".fade-right").forEach((element) => {
-
         gsap.fromTo(
             element,
             { opacity: 0, x: 100 },
@@ -187,9 +205,9 @@ $(document).ready(function () {
     const swiper2 = new Swiper(".testimonial__slider", {
         slidesPerView: "auto",
         loop: true,
-        speed: 4000,
+        speed: 1500,
         autoplay: {
-            delay: 3000,
+            delay: 2000,
         },
         navigation: {
             nextEl: ".swiper-button-next",
