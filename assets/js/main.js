@@ -39,10 +39,11 @@ $(document).ready(function () {
     // text animation 
 
     $(".header__title").each(function (i) {
+        const $h1 = $(this).find("h1");
         const $h2 = $(this).find("h2");
 
-        if ($h2.length) {
-            const split = new SplitText($h2[0])
+        if ($h2.length || $h1.length) {
+            const split = new SplitText($h1.length ? $h1[0] : $h2[0])
             const chars = split.chars
 
             gsap.fromTo(chars,

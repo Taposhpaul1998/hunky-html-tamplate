@@ -1,22 +1,48 @@
 @import "main.css";
 @import "pricing.css";
 
-/* ver  */
-:root {
-    --color-green-yellow: #88E64A;
-    --color-black: #0E0E0E;
-    --color-bacground: #F6F5F3;
-    --color-white: #FFFFFF;
-
-    /* font family  */
-    --font-clash: 'Clash Display', sans-serif;
-    --font-poppins: "Poppins", sans-serif
-}
-
+/* reused  */
 /* btn primary  */
 .home__three--primary-btn:hover {
     background-color: var(--color-black);
     color: var(--color-white);
+}
+
+/* play btn  */
+
+.play__btn {
+    width: clamp(2.5rem, 0.6707rem + 7.8049vw, 7.5rem);
+    height: clamp(2.5rem, 0.6707rem + 7.8049vw, 7.5rem);
+    background-color: var(--color-white);
+    border-radius: 50%;
+    transition: all .3s;
+    overflow: hidden;
+}
+
+.play__btn-icon {
+    width: clamp(0.75rem, 0.2927rem + 1.9512vw, 2rem);
+    height: clamp(0.75rem, 0.2927rem + 1.9512vw, 2rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+}
+
+.play__btn-icon:last-child {
+    transform: translate(-245%, 145%);
+}
+
+.play__btn:hover {
+    background-color: var(--color-green-yellow);
+}
+
+.play__btn:hover .play__btn-icon:first-child {
+    transform: translate(135%, -235%)
+}
+
+.play__btn:hover .play__btn-icon:last-child {
+    transform: translate(-50%, -50%);
 }
 
 /* hero section  */
@@ -65,45 +91,11 @@
     object-fit: cover;
 }
 
-.play__btn {
-    width: clamp(2.5rem, 0.6707rem + 7.8049vw, 7.5rem);
-    height: clamp(2.5rem, 0.6707rem + 7.8049vw, 7.5rem);
-    background-color: var(--color-white);
-    border-radius: 50%;
+.play__btn--hero {
     position: absolute;
     top: 60px;
     right: 60px;
-    transition: all .3s;
-    overflow: hidden;
 }
-
-.play__btn-icon {
-    width: clamp(0.75rem, 0.2927rem + 1.9512vw, 2rem);
-    height: clamp(0.75rem, 0.2927rem + 1.9512vw, 2rem);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all .3s;
-}
-
-.play__btn-icon:last-child {
-    transform: translate(-245%, 145%);
-}
-
-.play__btn:hover {
-    background-color: var(--color-green-yellow);
-}
-
-.play__btn:hover .play__btn-icon:first-child {
-    transform: translate(135%, -235%)
-}
-
-.play__btn:hover .play__btn-icon:last-child {
-    transform: translate(-50%, -50%);
-}
-
-
 
 
 @media screen and (max-width:1400px) {
@@ -135,7 +127,7 @@
         padding-top: 90px;
     }
 
-    .play__btn {
+    .play__btn--hero {
         top: 12%;
         right: 8%;
     }
@@ -287,6 +279,46 @@
     .about__counter-info {
         margin-top: 60px;
     }
+}
+
+/* projects video section  */
+.projects__video {
+    position: sticky;
+    top: 0;
+}
+
+.projects__video::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(10, 12, 0) 0%, transparent 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video__info-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: clamp(0.625rem, -1.4329rem + 8.7805vw, 6.25rem);
+    z-index: 10;
+}
+
+.video__info {
+    color: var(--color-white);
+}
+
+.video__info p {
+    font-size: 18px;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.play__btn--projects {
+    position: relative;
 }
 
 /* articale section  */
