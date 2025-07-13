@@ -12,6 +12,13 @@
     --font-poppins: "Poppins", sans-serif
 }
 
+/* btn primary  */
+.home__three--primary-btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/* hero section  */
 .hero__home-three {
     padding-top: 210px;
     padding-bottom: 130px;
@@ -41,13 +48,8 @@
     margin-bottom: 40px;
 }
 
-.hero__home-three .primary__btn:hover {
-    background-color: var(--color-black);
-    color: var(--color-white);
-}
-
 .hero__play {
-    padding: 130px 0;
+    padding-top: 130px;
 }
 
 .play__video {
@@ -129,7 +131,7 @@
     }
 
     .hero__play {
-        padding: 90px 0;
+        padding-top: 90px;
     }
 
     .play__btn {
@@ -150,6 +152,35 @@
     }
 
     .hero__play {
+        padding-top: 60px
+    }
+}
+
+/* service section  */
+.service__home-three {
+    padding: 130px 0;
+}
+
+.service__home-three .header__title {
+    margin-bottom: 40px;
+}
+
+.solutions__cart--second-col {
+    margin-top: 54px;
+}
+
+@media screen and (max-width:992px) {
+    .service__home-three {
+        padding: 90px 0;
+    }
+
+    .solutions__cart--second-col {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .service__home-three {
         padding: 60px 20px;
     }
 }
