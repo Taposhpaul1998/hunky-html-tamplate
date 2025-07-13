@@ -91,6 +91,7 @@ $(document).ready(function () {
 
     // gsap fade right animation 
     gsap.utils.toArray(".fade-right").forEach((element) => {
+        const delay = element.dataset.delay
         gsap.fromTo(
             element,
             { opacity: 0, x: 100 },
@@ -98,6 +99,7 @@ $(document).ready(function () {
                 opacity: 1,
                 x: 0,
                 duration: 0.5,
+                delay: delay ? delay : 0,
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: element,
