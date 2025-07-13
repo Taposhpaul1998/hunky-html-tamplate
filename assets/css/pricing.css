@@ -7,6 +7,11 @@
     padding: 130px 0;
 }
 
+.pricing__section .header__title {
+    color: var(--color-black);
+    margin-bottom: 54px;
+}
+
 .pricing__cart {
     padding: 50px 40px;
     background-color: var(--color-bacground);

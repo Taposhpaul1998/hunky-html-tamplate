@@ -1,4 +1,5 @@
-@import "home_One.css";
+@import "main.css";
+@import "pricing.css";
 
 /* ver  */
 :root {
@@ -285,5 +286,22 @@
 
     .about__counter-info {
         margin-top: 60px;
+    }
+}
+
+/* articale section  */
+.artical__section {
+    margin-bottom: 130px;
+}
+
+@media screen and (max-width:992px) {
+    .artical__section {
+        margin-bottom: 90px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .artical__section {
+        margin-bottom: 60px;
     }
 }
