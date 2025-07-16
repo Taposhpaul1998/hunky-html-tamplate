@@ -1,0 +1,78 @@
+@import"main.css";
+
+:root {
+    --color-green-yellow: #88E64A;
+    --color-black: #0E0E0E;
+    --color-bacground: #F6F5F3;
+    --color-white: #FFFFFF;
+
+    /* font family  */
+    --font-clash: 'Clash Display', sans-serif;
+    --font-poppins: "Poppins", sans-serif
+}
+
+/* header section  */
+
+.nav__right {
+    gap: 18px;
+}
+
+.nav__right .primary__btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.search__fild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__fild form {
+    width: 485px;
+    border: 1px solid #dfdedb;
+    position: relative;
+}
+
+.search__fild form input:first-child {
+    width: 100%;
+    padding: 18px 10px;
+    border: none;
+    outline: none;
+}
+
+.search__fild form .primary__btn {
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search__fild form .primary__btn:hover {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+@media screen and (max-width:1200px) {
+    .nav {
+        gap: 10px;
+    }
+
+    .nav__list {
+        gap: 34px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .nav {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .search__fild form {
+        width: 100%;
+        padding-inline: 20px;
+    }
+}
