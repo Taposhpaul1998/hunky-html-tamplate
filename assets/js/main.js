@@ -169,7 +169,7 @@ $(document).ready(function () {
         ScrollTrigger.refresh();
     });
 
-    // swiper slider 
+    // runig swiper slider
     const swiper = new Swiper(".runing__swiper", {
         loop: true,
         slidesPerView: 'auto',
@@ -186,7 +186,26 @@ $(document).ready(function () {
         loopAdditionalSlides: 6,
         cssMode: false,
     })
-    // slider 2
+
+    //raning__partner slider
+    const ranningPartner = new Swiper(".raning__partner", {
+        slidesPerView: 'auto',
+        loop: true,
+        speed: 4000,
+        spaceBetween: 74,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+        freeMode: true,
+        freeModeMomentum: false,
+        allowTouchMove: false,
+        loopedSlides: 6,
+        slidesPerGroup: 1,
+        loopAdditionalSlides: 6,
+        cssMode: false,
+    })
+    // testimonial slider
     const swiper2 = new Swiper(".testimonial__slider", {
         slidesPerView: "auto",
         loop: true,
