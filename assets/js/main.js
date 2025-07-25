@@ -206,7 +206,7 @@ $(document).ready(function () {
         cssMode: false,
     })
     // testimonial slider
-    const swiper2 = new Swiper(".testimonial__slider", {
+    const testimonial = new Swiper(".testimonial__slider", {
         slidesPerView: "auto",
         loop: true,
         speed: 1500,
@@ -218,7 +218,66 @@ $(document).ready(function () {
             prevEl: ".swiper-button-prev",
         }
     })
+    // testimonial-2 slider
+    const testimonial2 = new Swiper(".testimonial__slider-info", {
+        slidesPerView: "auto",
+        effect: "fade",
+        fadeEffect: {
+            crossFade: true
+        },
+        loop: true,
+        autoplay: {
+            delay: 2000,
+        },
+        navigation: true
+    })
+    // testimonial-3 slider
+    const testimonial3 = new Swiper(".testimonial__slider-img", {
+        grabCursor: true,
+        initialSlide: 3,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        spaceBetween: 24,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+        },
+        navigation: true,
+        loopedSlides: 3,
+        slidesPerGroup: 1,
+        loopAdditionalSlides: 3,
+        thumbs: {
+            swiper: testimonial2,
+        },
+    });
 
+    // Ensure the slider starts centered after initialization
+    testimonial3.on('init', function () {
+        testimonial3.slideToLoop(testimonial3.params.initialSlide, 0, false);
+    });
+    testimonial3.init();
+
+
+
+
+    // var swiper = new Swiper(".mySwiper", {
+    //   loop: true,
+    //   spaceBetween: 10,
+    //   slidesPerView: 4,
+    //   freeMode: true,
+    //   watchSlidesProgress: true,
+    // });
+    // var swiper2 = new Swiper(".mySwiper2", {
+    //   loop: true,
+    //   spaceBetween: 10,
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    //   thumbs: {
+    //     swiper: swiper,
+    //   },
+    // });
 })
 
 
